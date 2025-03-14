@@ -1,0 +1,105 @@
+/* File: style.css */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f; /* Warna latar belakang biru gelap */
+    color: #ffffff; /* Warna teks putih */
+    line-height: 1.6;
+}
+
+/* Container Utama */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Judul Halaman */
+h1.mt-4 {
+    color: #4fc3f7; /* Warna biru muda */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Deskripsi */
+.lead {
+    font-size: 1.25rem;
+    color: #e0e0e0; /* Warna abu-abu muda */
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Daftar Konten */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #2a2a40; /* Warna container biru gelap */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4fc3f7; /* Warna aksen biru muda */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(79, 195, 247, 0.3);
+}
+
+ul li strong {
+    color: #4fc3f7; /* Warna biru muda */
+}
+
+/* Paragraf Tambahan */
+p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Warna abu-abu muda */
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Link */
+a {
+    color: #4fc3f7; /* Warna biru muda */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff; /* Warna putih saat hover */
+    text-decoration: underline;
+}
+
+/* Efek Card pada Konten */
+.row.mt-4 {
+    background-color: #2a2a40; /* Warna container biru gelap */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    h1.mt-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+}
